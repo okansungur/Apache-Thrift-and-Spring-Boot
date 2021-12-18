@@ -19,6 +19,10 @@ Base types for Thrift are :
 The other types are Structs, Containers , Exceptions, Services
 
 For our tutorial we will create two applications Client and Server. But before we start we have to download Apache thrift compiler.If you are working on windows please download the link for windows.
+<p align="center">
+  <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/download.png"><br/>
+  Apache Thrift download link and Maven dependency 
+</p>
 
 After the download we are ready to create our studentservice.thrift file. The namespace here is important here as we will use the generated classes within our applications.
 
@@ -53,8 +57,8 @@ service StudentService {
 We will also place thrift compiler inside our project with   studentservice.thrift file.
 
 <p align="center">
-  <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/download.png"><br/>
-  Apache Thrift download link and Maven dependency 
+  <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/tfriftcompiler.png"><br/>
+  Thrift compiler and our thrift file
 </p>
 
 
