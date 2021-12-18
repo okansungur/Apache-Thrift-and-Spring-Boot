@@ -104,6 +104,69 @@ public class StudentServiceImpl implements StudentService.Iface {
 
 ```
 We implement the methods according to our needs. To demonstrate the data we have only defined getList() method. We defined a student with name Lucy.
+Now we are ready to code our ServerApplication. We will be using port 9479 for incoming data.
+
+```
+
+@SpringBootApplication
+public class ServerApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ServerApplication.class, args);
+        try {
+            TProcessor tprocessor = new StudentService.Processor<StudentService.Iface>(new StudentServiceImpl());
+            TServerSocket serverTransport = new TServerSocket(9479);
+            TServer.Args tArgs = new TServer.Args(serverTransport);
+            tArgs.processor(tprocessor);
+            tArgs.protocolFactory(new TBinaryProtocol.Factory());
+            TServer server = new TSimpleServer(tArgs);
+            server.serve();
+            System.out.println("Server has started at port 9479");
+        } catch (TTransportException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+}
+
+
+```
+
+We have completed the  server application. and now we are ready to go with the client application. We will again use our thrift compiler to generate our resource codes. Just repeat the same steps lişke we did in our server application.
 
 
 
+
+Now we are ready to create the ClientApplication.
+```
+@SpringBootApplication
+public class ClientApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ClientApplication.class, args);
+
+        TTransport transport = null;
+        try {
+            transport = new TSocket("localhost", 9479);
+            transport.open();
+            TProtocol protocol = new TBinaryProtocol(transport);
+            StudentService.Client client = new StudentService.Client(protocol);
+            boolean result = client.ping();
+            System.out.println("ping result is " + result);
+            List<StudentResource> resources = client.getList();
+            System.out.println("Student name is " + resources.get(0).studentName);
+            System.out.println("Student id is " + resources.get(0).studentid);
+            transport.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (transport != null) {
+                transport.close();
+            }
+        }
+
+    }
+}
+
+```
