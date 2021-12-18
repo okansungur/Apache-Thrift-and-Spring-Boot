@@ -190,7 +190,7 @@ We are going to use  port 9479 to connect the server and we will call our studen
 
 <p align="center">
   <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/client_output.png"><br/>
-  Thrift compiler client side
+  Client output
 </p>
 
 
