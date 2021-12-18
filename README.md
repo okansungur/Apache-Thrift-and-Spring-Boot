@@ -18,4 +18,34 @@ Base types for Thrift are :
 
 The other types are Structs, Containers , Exceptions, Services
 
-For our tutorial we will create two applications Client and Server. But before we start we have to download 
+For our tutorial we will create two applications Client and Server. But before we start we have to download Apache thrift compiler.If you are working on windows please download the link for windows.
+
+After the download we are ready to create our studentservice.thrift file. 
+```
+
+namespace java com.example.thrift.mythrift
+
+exception InvalidOperationException {
+    1: i32 number, 
+    2: string  error
+}
+
+struct StudentResource {
+    1: i32 id,
+    2: string studentName, 
+    3: optional string  studentid 
+}
+
+service StudentService {
+
+    StudentResource get(1:i32 id) throws (1:InvalidOperationException e),
+
+    void save(1:StudentResource resource) throws (1:InvalidOperationException e),
+
+    list <StudentResource> getList() throws (1:InvalidOperationException e),
+
+    bool ping() throws (1:InvalidOperationException e)
+}
+
+```
+
