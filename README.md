@@ -57,7 +57,7 @@ service StudentService {
 We will also place thrift compiler inside our project with   studentservice.thrift file. After adding the needed  dependencies to our pom.xml file we will run maven-clean  and maven compile commands.
 
 <p align="center">
-  <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/tfriftcompiler.png"><br/>
+  <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/thrift_compiler.png"><br/>
   Thrift compiler and our thrift file
 </p>
 
