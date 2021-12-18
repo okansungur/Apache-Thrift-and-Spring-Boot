@@ -61,7 +61,7 @@ We will also place thrift compiler inside our project with   studentservice.thri
   Thrift compiler and our thrift file
 </p>
 
-By this way we will generate the classes 
+By this way we will generate the classes needed for our server application
 
 
 
