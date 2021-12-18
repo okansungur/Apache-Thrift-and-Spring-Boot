@@ -18,3 +18,4 @@ Base types for Thrift are :
 
 The other types are Structs, Containers , Exceptions, Services
 
+For our tutorial we will create two applications Client and Server. But before we start we have to download 
