@@ -133,8 +133,13 @@ public class ServerApplication {
 
 ```
 
-We have completed the  server application. and now we are ready to go with the client application. We will again use our thrift compiler to generate our resource codes. Just repeat the same steps lişke we did in our server application.
+We have completed the  server application. and now we are ready to go with the client application. We will again use our thrift compiler to generate our resource codes. Just repeat the same steps like we did in our server application.
 
+
+<p align="center">
+  <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/thrift_client.png"><br/>
+  Thrift compiler client side
+</p>
 
 
 
