@@ -188,7 +188,10 @@ The TTransport provides a simple abstraction for reading and writing  operations
 We are going to use  port 9479 to connect the server and we will call our student methods from the server. Remember we created a sudent with name Lucy and her studentid was 157112. After we run our client application you should see the results as shown.
 
 
-
+<p align="center">
+  <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/client_output.png"><br/>
+  Thrift compiler client side
+</p>
 
 
 
