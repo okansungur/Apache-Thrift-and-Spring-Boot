@@ -53,6 +53,8 @@ service StudentService {
 }
 
 ```
+We put some basic data types and our student data consists id, studentName and  studentid fields . Our service has 4 methods to save and get our student data.
+
 
 We will also place thrift compiler inside our project with   studentservice.thrift file. After adding the needed  dependencies to our pom.xml file we will run maven-clean  and maven compile commands.
 
@@ -98,7 +100,7 @@ public class StudentServiceImpl implements StudentService.Iface {
 }
 
 ```
-We implement the methods according to our needs. To demonstrate the data we have only completed getList() method. We 
+We implement the methods according to our needs. To demonstrate the data we have only completed getList() method. We defined a student with name Lucy.
 
 
 
