@@ -170,3 +170,15 @@ public class ClientApplication {
 }
 
 ```
+
+
+The TTransport provides a simple abstraction for reading and writing  operations. If you are familiar with java networking the methods are similar.
+- open
+- close
+- read
+- write
+- flush
+
+
+
+
