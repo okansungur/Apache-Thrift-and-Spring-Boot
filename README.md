@@ -56,7 +56,8 @@ service StudentService {
 We put some basic data types and our student data consists id, studentName and  studentid fields . Our service has 4 methods that save and get our student data and also the ping method.
 
 
-We will also place thrift compiler inside our project with   studentservice.thrift file. After adding the needed  dependencies to our pom.xml file we will run maven-clean  and maven compile commands.
+We will also place thrift compiler inside our project with   studentservice.thrift file. We will use  **thrift-0.15.0.exe -r --gen java studentservice.thrift**
+After adding the needed  dependencies to our pom.xml file we will run maven-clean  and maven compile commands.
 
 <p align="center">
   <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/thrift_compiler.png"><br/>
