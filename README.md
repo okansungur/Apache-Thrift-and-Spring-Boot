@@ -1,4 +1,4 @@
-# Apache-Thrift-and-Spring-Boot
+# Apache-Thrift & Spring-Boot
 
 - Thrift is now  an open-source tool from the Apache Software Foundation.
 - Data types and service interfaces for the complex services  are defined in a simple definition file. Thrift compiler uses this file to generate RPC servers and clients
