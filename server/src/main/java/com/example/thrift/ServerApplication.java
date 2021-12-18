@@ -28,8 +28,6 @@ public class ServerApplication {
             e.printStackTrace();
         }
 
-
     }
-
 
 }

@@ -13,13 +13,11 @@ import java.util.List;
 
 @SpringBootApplication
 public class ClientApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(ClientApplication.class, args);
 
         TTransport transport = null;
         try {
-
             transport = new TSocket("localhost", 9479);
             transport.open();
             TProtocol protocol = new TBinaryProtocol(transport);
@@ -38,7 +36,6 @@ public class ClientApplication {
                 transport.close();
             }
         }
-
 
     }
 
