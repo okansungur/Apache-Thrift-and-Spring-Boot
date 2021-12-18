@@ -20,7 +20,8 @@ The other types are Structs, Containers , Exceptions, Services
 
 For our tutorial we will create two applications Client and Server. But before we start we have to download Apache thrift compiler.If you are working on windows please download the link for windows.
 
-After the download we are ready to create our studentservice.thrift file. 
+After the download we are ready to create our studentservice.thrift file. The namespace here is important here as we will use the generated classes within our applications.
+
 ```
 
 namespace java com.example.thrift.mythrift
@@ -48,4 +49,13 @@ service StudentService {
 }
 
 ```
+
+We will also place thrift compiler inside our project with   studentservice.thrift file.
+
+<p align="center">
+  <img  src="https://github.com/okansungur/ConfluentKafkaAvro/blob/main/containerlist.png"><br/>
+  Docker container list
+</p>
+
+
 
