@@ -183,8 +183,9 @@ The TTransport provides a simple abstraction for reading and writing  operations
 - read
 - write
 - flush
-We are going to use  port 9479 to connect the server and we will call our student methods from the server. Remember we created a sudent with name Lucy and her studentid was 157112.
-After we run our client application you should see the results as shown.
+
+
+We are going to use  port 9479 to connect the server and we will call our student methods from the server. Remember we created a sudent with name Lucy and her studentid was 157112. After we run our client application you should see the results as shown.
 
 
 
