@@ -183,7 +183,7 @@ The TTransport provides a simple abstraction for reading and writing  operations
 - read
 - write
 - flush
-
+We are going to use  port 9479 to send our message.
 
 
 
