@@ -53,8 +53,8 @@ service StudentService {
 We will also place thrift compiler inside our project with   studentservice.thrift file.
 
 <p align="center">
-  <img  src="https://github.com/okansungur/ConfluentKafkaAvro/blob/main/containerlist.png"><br/>
-  Docker container list
+  <img  src="https://github.com/okansungur/Apache-Thrift-and-Spring-Boot/blob/main/download.png"><br/>
+  Apache Thrift download link and Maven dependency 
 </p>
 
 
